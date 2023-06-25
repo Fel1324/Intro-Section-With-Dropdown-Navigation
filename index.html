@@ -14,7 +14,7 @@
 
     <body>
         <header class="header">
-            <div class="header__container container">
+            <div class="header__container">
                 <img class="header__logo" src="img/logo.svg" alt="logo da snap">
 
                 <button class="open-menu">
@@ -22,6 +22,49 @@
                 </button>
             </div>
         </header>
+
+        <div id="overlay"></div>
+        
+        <aside class="menu">
+            <div class="menu__container">
+                <div class="menu__header">
+                    <button class="close-menu">
+                        <img src="img/icon-close-menu.svg" alt="Fechar menu lateral">
+                    </button>
+                </div>
+
+                <nav class="menu__navigation">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <button class="generic-button" aria-label="Abrir Features">
+                                Features
+                                <img class="button-arrow" src="img/icon-arrow-down.svg" alt="">
+                            </button>
+                        </li>
+
+                        <li class="menu__item">
+                            <button class="generic-button" aria-label="Abrir Company">
+                                Company
+                                <img class="button-arrow" src="img/icon-arrow-down.svg" alt="">
+                            </button>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="generic-link" href="#!">Careers</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="generic-link" href="#!">About</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="menu__sign">
+                    <a class="login" href="#!">Login</a>
+                    <a class="register" href="#!">Register</a>
+                </div>
+            </div>
+        </aside>
 
         <main class="main">
             <div class="main__container">
@@ -31,15 +74,28 @@
 
                 <section class="main__content">
                     <h1 class="main__title">Make remote work</h1>
-
-                    <p class="main__paragraph">
-                        Get your team in sync, no matter your location. Streamline processes, 
-                        create team rituals, and watch productivity soar.
-                    </p>
-
+                    <p class="main__paragraph">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
                     <button class="main__button">Learn more</button>
 
-                    <article></article>
+                    <div class="main__footer">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <img class="footer__img" src="img/client-databiz.svg" alt="databiz">
+                            </li>
+
+                            <li class="footer__item">
+                                <img class="footer__img" src="img/client-audiophile.svg" alt="audiophile">
+                            </li>
+
+                            <li class="footer__item">
+                                <img class="footer__img" src="img/client-meet.svg" alt="meet">
+                            </li>
+
+                            <li class="footer__item">
+                                <img class="footer__img" src="img/client-maker.svg" alt="maker">
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </main>
