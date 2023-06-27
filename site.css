@@ -72,10 +72,18 @@ a{
 
     text-align: center;
 
-    width: 90%;
-    max-width: 20rem;
+    padding-inline: 6rem;
 
     padding-block: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        max-width: 125rem;
+
+        margin-inline: auto;
+        padding-inline: 3rem;
+    }
 }
 
 /* HEADER */
@@ -90,12 +98,47 @@ a{
 
     padding-block: 3rem;
     padding-inline: 1.8rem;
-
-    max-width: 75rem;
-    margin-inline: auto;
 }
 
-/* OVERLAY */
+.header__navigation{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__container{
+        padding-inline: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {    
+    .header__logo{
+        margin-right: 4rem;
+    }
+
+    .open-menu{
+        display: none;
+    }
+
+    .header__navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .header__list{
+        display: flex;
+        column-gap: 4rem;
+    }
+
+    .header__sign{
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+    }
+}
+
+/* MENU */
 #overlay{
     display: none;
 
@@ -113,7 +156,6 @@ a{
     opacity: .8;
 }
 
-/* MENU */
 .menu{
     background-color: var(--neutral-color);
 
@@ -161,6 +203,18 @@ a{
     font-size: 1.6rem;
 }
 
+@media screen and (min-width: 768px) {
+    .menu__container{
+        padding-inline: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu{
+        display: none;
+    }
+}
+
 /* MAIN */
 .main{
     width: 100%;
@@ -168,13 +222,14 @@ a{
 
 .main__container{
     display: grid;
-    row-gap: 5rem;
+    gap: 5rem;
 
     text-align: center;
 
     max-width: 40rem;
 
     margin-inline: auto;
+    padding-bottom: 8rem;
 }
 
 .main__hero{
@@ -183,7 +238,6 @@ a{
 
 .main__content{
     padding-inline: 1.8rem;
-    padding-bottom: 8rem;
 }
 
 .main__title{
@@ -223,9 +277,45 @@ a{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
 }
 
 .footer__img{
     width: 6.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .main__container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'text img';
+    
+        max-width: 100%;
+
+        padding-top: 6rem;
+    }
+
+    .main__container div{
+        grid-area: img;
+    }
+
+    .main__content{
+        text-align: left;
+
+        align-self: center;
+
+        padding-inline: 0;
+    }
+
+    .main__title{    
+        font-size: 6rem;
+    }
+
+    .footer__list{
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+
+    .footer__img{
+        width: 8rem;
+    }
 }
