@@ -51,6 +51,8 @@
 
 .dropdown-open{
     display: block;
+
+    animation: toAppear 200ms 200ms backwards;
 }
 
 .dropdown__item:not(:last-child){
@@ -95,3 +97,14 @@
     }
 }
 
+@keyframes toAppear{
+    from{
+        opacity: 0;
+        transform: translateY(-24px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

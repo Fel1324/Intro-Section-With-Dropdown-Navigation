@@ -54,6 +54,11 @@ a{
     text-decoration: none;
 }
 
+::selection{
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+}
+
 .container{
     width: 100%;
 }
