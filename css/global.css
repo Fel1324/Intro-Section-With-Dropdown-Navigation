@@ -1,0 +1,97 @@
+@import url('header.css');
+@import url('main.css');
+@import url('menu.css');
+@import url('dropdown.css');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --neutral-color: hsl(0, 0%, 98%);
+    --primary-color: hsl(0, 0%, 41%);
+    --secondary-color: hsl(0, 0%, 8%);
+    
+    --list-expanded-bg-color: hsl(0, 0%, 100%);
+    --list-expanded-shadow-color: hsla(0, 0%, 64%, 1);
+
+    --font: 'Epilogue', sans-serif;
+
+    font-size: 62.5%;
+}
+
+html, body{
+    background-color: var(--neutral-color);
+    color: var(--primary-color);
+
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: var(--font);
+}
+
+button{
+    background: none;
+
+    cursor: pointer;
+}
+
+img{
+    vertical-align: top;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+}
+
+.login,
+.register{
+    color: var(--primary-color);
+}
+
+.login:hover,
+.register:hover{
+    color: var(--secondary-color);
+}
+
+.register{
+    border: .2rem solid var(--primary-color);
+    border-radius: 1.4rem;
+
+    text-align: center;
+
+    padding-inline: 6rem;
+
+    padding-block: 1.2rem;
+}
+
+.register:hover{
+    border-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1024px) {
+    div.container{
+        max-width: 120rem;
+
+        margin-inline: auto;
+        padding-inline: 6rem;
+    }
+
+    .register{
+        padding-inline: 2.4rem;
+    }
+}
