@@ -42,8 +42,6 @@
 .dropdown{
     display: none;
 
-    background: transparent;
-
     position: static;
 
     padding: 2.4rem;
@@ -82,15 +80,13 @@
         margin-top: 1.4rem;
 
         position: absolute;
-    }
 
-    .features{
         right: 0;
     
         width: 17.5rem;
     }
     
-    .company{
+    .header__item:nth-child(2) .dropdown{
         left: 0; 
     
         width: 14rem;

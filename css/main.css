@@ -4,7 +4,7 @@
 
 .main__container{
     display: grid;
-    gap: 5rem;
+    row-gap: 5rem;
 
     text-align: center;
 
@@ -36,8 +36,8 @@
 
 .main__button{
     background-color: var(--secondary-color);
-    border-radius: 1.4rem;
     border: .2rem solid var(--secondary-color);
+    border-radius: 1.4rem;
     color: var(--neutral-color);
     
     font-size: 2rem;
@@ -79,8 +79,7 @@
         grid-template-columns: 1.4fr 1fr;
         grid-template-areas: 
         'text img';
-        gap: 0;
-        
+                
         max-width: 100%;
 
         padding-top: 4rem;
